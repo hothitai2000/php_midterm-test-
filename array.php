@@ -10,17 +10,9 @@ session_start();
     <title>Document</title>
 <style>
 .list-card{
-            margin-left: 10px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            grid-gap: 15px;
         }
-
-.list-card.card-1.card_img{
-   height: 100px;
-   width: 50px;
-
-}
 </style>
 </head>
 <body>
