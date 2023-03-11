@@ -11,8 +11,12 @@ session_start();
 <style>
 .list-card{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
+.card__img{
+    width: 300px;
+    height: 350px;
+}
 </style>
 </head>
 <body>
@@ -22,21 +26,21 @@ $sanpham[0]['Id']="0";
 $sanpham[0]['Name']="Quần short kaki";
 $sanpham[0]['Code']="TC1025011BA";
 $sanpham[0]['Price']="398,000";
-$sanpham[0]['Image']="https://static.hotdeal.vn/images/961/961494/400x500/239509-quan-short-kaki-nam-hang-nhap-cao-cap-239493-vn-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35.jpg";
+$sanpham[0]['Image']="https://cf.shopee.vn/file/60d7f90b2589969f9e6e5224968f22fd";
 
 
 $sanpham[1]['Id']="1";
 $sanpham[1]['Name']="Quần short màu cobal";
 $sanpham[1]['Code']="QSD.013";
 $sanpham[1]['Price']="354,000";
-$sanpham[1]['Image']="https://static.hotdeal.vn/images/961/961481/400x500/239494-quan-short-kaki-nam-hang-nhap-cao-cap-239493-vn-2-3-4-5-6.jpg";
+$sanpham[1]['Image']="https://cf.shopee.vn/file/60d7f90b2589969f9e6e5224968f22fd";
 
 
 $sanpham[2]['Id']="2";
 $sanpham[2]['Name']="Quần kaki name Bernice màu sữa";
 $sanpham[2]['Code']="QKK.012";
 $sanpham[2]['Price']="545,000";
-$sanpham[2]['Image']="http://product.hstatic.net/1000304069/product/mvpn030mbr01__2__ee4d20ca50cb449caf1b3728272d03eb_grande.jpg";
+$sanpham[2]['Image']="https://cf.shopee.vn/file/60d7f90b2589969f9e6e5224968f22fd";
 
 
 $sanpham[3]['Id']="3";
@@ -67,7 +71,7 @@ $sanpham[5]['Image']="https://lzd-img-global.slatic.net/live/vn/p/a6991f0f442c55
                    <h3 class="card__name"><?php echo $sanpham[0]["Name"] ?></h3>
                    <div class="card__code"><?php echo $sanpham[0]["Code"] ?></div>
                    <div class="card__Price"><?php echo $sanpham[0]["Price"]; ?></div>
-                   <button class="card__buy">Đặt mua</button>
+                   <button class="card__buy" >Đặt mua</button>
                </div>
                <div class="card-2">
                    <img class="card__img" src=<?php echo $sanpham[1]["Image"]; ?> ></img>
